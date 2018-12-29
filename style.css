@@ -4,14 +4,14 @@
 }
 
 .container {
-	width: 600px;
-	text-align: center;
+	width: 800px;
+	text-align: left;
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
 }
 .container img {
 	width: 300px;
@@ -26,9 +26,33 @@ h1 {
 	margin: 20px 0;
 	font-size: 28px;
 }
+.clear {
+  clear: both;
+}
+.mobile-screenshot {
+  float: left;
+  width: 200px;
+  margin-right: 25px;
+}
+.mobile-screenshot img {
+  height: auto;
+  width: 100%;
+}
+.actual-content {
+
+}
 
 @media only screen and (max-width: 768px) {
     .container {
     	width: 100%;
+      text-align: center;
+
+    }
+    .actual-content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .mobile-screenshot {
+      display: none;
     }
 }
